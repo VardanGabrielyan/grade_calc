@@ -18,3 +18,4 @@ let studentScore = function(score,total){
 }
 let result = studentScore(18,20);
 console.log(result);
+
