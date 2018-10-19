@@ -17,5 +17,14 @@ let studentScore = function(score,total){
    return `You got ${grade} (${percent}%)!`;
 }
 let result = studentScore(18,20);
-console.log(result);
+//console.log(result);
 
+document.querySelector('#calculate-grade').addEventListener('click', function(e){
+    e.target.textContent= 'The button was clicked'
+})
+
+
+document.querySelector('#add-text').addEventListener('input', function(e){
+    filters.searchText = e.target.value;
+    studentScore(score);
+})
